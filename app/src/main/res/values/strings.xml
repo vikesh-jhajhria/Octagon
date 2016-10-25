@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Octagon</string>
+    <string name="facebook_key">1673357266254895</string>
+    <string name="status_bar_title">The Octagon Project</string>
+    <string name="status_bar_subtitle">A 30-day Virtual Reality Tour to the Holy Land</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!--Login Screen-->
+    <string name="login_status">The Entire Holy Land in Virtual Reality!</string>
+    <string name="login_ways">There are two ways to login.</string>
+    <string name="way_facebook">1. Through your Facebook account.</string>
+    <string name="way_username">2. Use your registered Octagon Project username and password.</string>
+    <string name="text_username">Username (case sensitive)</string>
+    <string name="text_password">My Password (case sensitive)</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="text_forgot">Forgot your username or password?</string>
+    <string name="login_with_fb">Login with Facebook</string>
+    <string name="login">Log In</string>
+    <string name="skip">Skip</string>
+    <string name="trailer_1">Trailer #1 \n 2-Minutes Overview</string>
+    <string name="trailer_2">Trailer #2 \n 8-Minutes In-Depth</string>
+    <string name="travel_all">Travel all over the Holy Land for a tiny fraction of the cost</string>
+    <string name="stunning_realism">STUNNING REALISM</string>
+    <string name="stunning_realism_text">With The Octagon Project you will feel like you are actually walking through Israel, being totally immersed in all of the sights and sounds of the Holy Land. Our specially-formatted videos play on any computer, any mobile device, and all virtual reality headsets.</string>
+    <string name="over_sites">OVER 200 SITES</string>
+    <string name="over_sites_text">We will take you to every location in the nation of Israel and Jordan that is named in the Gospels...and more! The Octagon Project is the equivalent of an expertly-guided VIP 30-day tour to the Holy Land. You will walk in places where most tourists don\'t have time to visit, or are never allowed to go.</string>
+    <string name="free_subscription">FREE SUBSCRIPTION</string>
+    <string name="free_subscription_text">There are 30 tours in The Octagon Project. With your free membership you will able to view a 360-degree intro video of each tour at no cost. Then when you are ready, purchase only the full tours that you want to go on. Just click the Free Signup button below.</string>
+    <string name="go_to_tours">Go to the Tours</string>
+    <string name="free_signup">Free Signup</string>
+    <string name="jump_to_tour">Jump to Any Tour</string>
+
+    <!--Online Tours-->
+    <string name="ready_title">Tour #2 is now ready for purchase! Preview this tour here.</string>
+    <string name="ready_txt">Unlike an actual "live" tour to the Holy Land, The Octagon Project has the capability of escorting you through the entire land in the chronological order of The Merged Gospels. There are 30 tours in The Octagon Project. In every tour there will be a free introductory video, which you can access by becoming a "lite" subscriber. All of the other videos on each tour require that you purchase that particular tour. When you purchase any tour, you will be able to watch all the 360° videos on your computer and mobile devices, and in virtual reality with any smartphone or VR headgear.</string>
+
+    <!--Signup-->
+    <string name="signup_way">There are two ways to get on board.</string>
+    <string name="trial">Opening an account will allow you to view all of the introductory videos for each of our 30 tours for free.</string>
+    <string name="use_fb">Use your Facebook account</string>
+    <string name="choose_username">Choose a username and password.</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="uname">User Name</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+</resources>

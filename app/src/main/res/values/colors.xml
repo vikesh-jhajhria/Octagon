@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bc000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D87000</color>
+
+    <color name="yellow">#D87000</color>
+    <color name="off_yellow">#DEB273</color>
+    <color name="black_tansparent">#45000000</color>
+
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorSecondary">#808080</color>
+
+    <color name="off_white">#89edeff7</color>
+    <color name="transparent_white">#6dffffff</color>
+    <color name="golden_text">#E6B178</color>
+</resources>
