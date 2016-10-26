@@ -68,13 +68,13 @@ public class HomeActivity extends BaseActivity
                 startActivity(new Intent(getApplicationContext(),LoginActivity.class));
                 break;
             case R.id.our_store:
-
+                startActivity(new Intent(getApplicationContext(),OurStoreActivity.class));
                 break;
             case R.id.online_tours:
                 startActivity(new Intent(getApplicationContext(),OnlineToursActivity.class));
                 break;
             case R.id.live_tours:
-
+                startActivity(new Intent(getApplicationContext(),LiveToursActivity.class));
                 break;
             case R.id.scholarly_reviews:
 

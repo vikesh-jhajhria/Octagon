@@ -4,9 +4,6 @@
     <string name="status_bar_title">The Octagon Project</string>
     <string name="status_bar_subtitle">A 30-day Virtual Reality Tour to the Holy Land</string>
 
-
-    <string name="action_settings">Settings</string>
-
     <!--Login Screen-->
     <string name="login_status">The Entire Holy Land in Virtual Reality!</string>
     <string name="login_ways">There are two ways to login.</string>
@@ -46,4 +43,82 @@
     <string name="uname">User Name</string>
     <string name="email">Email</string>
     <string name="register">Register</string>
+
+    <!--Our Store-->
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="our_publications">Our Publications</string>
+    <string name="guided_tours_headline">Our 360° Online Guided Tours</string>
+    <string name="guided_tours_text">When you purchase any tour, you will be able to watch all the 360° videos on your computer and mobile devices, and in stereoscopic virtual reality with any smartphone or VR headgear.</string>
+
+    <string name="post_production">(Currently in post-production)</string>
+    <string name="click_for_description">Click here for a full description and video about this tour</string>
+
+    <string name="tour_1_heading">Tour 1 - The Prologue To The Gospel</string>
+    <string name="tour_1_description">During this primer you will be introduced to many of the sites of Israel, and you will receive a complete overview of the entire 30-day Octagon Project tour.</string>
+    <string name="tour_2_heading">Tour 2 - The Years Before Christ</string>
+    <string name="tour_2_caption">Available now. Introductory price-$4.99. 13 videos. 2.25 hours</string>
+    <string name="tour_2_description">Sites visited – The Church of St. Anne (the birthplace of Mary), The Church of the Annunciation, The Dome of the Rock and Cave of Souls, The Church St. Gabriel (the annunciation site), John the Baptist’s Cave, The Church of John the Baptist in Ein Karem (John’s birthplace), Mary’s Spring (Ein Karem), Mary’s Well (Nazareth) and The Temple Mount.</string>
+    <string name="tour_3_heading">Tour 3 - The Nativity</string>
+    <string name="tour_3_description">Sites visited – Herod’s Grand Palace, the Jerusalem Model, the Church of St. Joseph, the Kathisma (where Mary rested), the Kishle (ruins of Herod’s palace), the International Mary of Nazareth Center, the Milk Grotto (Jesus’ infant home), the Chapel of the Holy Innocents, the Church of the Nativity, Nazareth Ruins, the Ophel Archeological Park, both the Franciscan and the YMCA Shepherd’s Field, the Monastery of Theodosius (the Magi Cave), the Tower of David Museum and the Church of the Visitation (of Mary to Elizabeth).</string>
+    <string name="tour_4_heading">Tour 4 - John The baptist</string>
+    <string name="tour_4_description">Sites visited – The Ophel Archeological Park, Elijah’s Hill (with John’s cave), En Gedi, the Church of St. John the Baptist in the Old City, the Church of Madaba (the Madaba map), Naharayim (baptism site), Qasr Al Yehud (baptism site), Qumran (the Dead Sea Scrolls), The Monastery of Temptation and Wadi Kharrar (John’s original baptism site in Jordan).</string>
+    <string name="tour_5_heading">Tour 5 - The First Disciples</string>
+    <string name="tour_5_description">Sites visited – Bethsaida (original home of the first apostles), The Franciscan and Orthodox churches of Cana, Khirbet Kana (ruins of Cana) and Yardenit (baptism site).</string>
+    <string name="tour_6_heading">Tour 6 - Jesus In Jerusalem</string>
+    <string name="tour_6_description">Sites visited – Capernaum, the Gethsemane Grotto, Ainon near Salim (where John baptized, Tiberias, The Temple Mount and the Jerusalem Model.</string>
+    <string name="tour_7_heading">Tour 7 - The Journey To Nazareth</string>
+    <string name="tour_7_description">Sites visited – Sychar (where Jesus stayed 3 days), Mount Gerazim (where the Samaritans still worship), Magdala (home of Mary Magdalene), the Maronite Cliff (where a crowd tried to kill Jesus), Megiddo, the Church of Saint Photini (the woman at the well), Mount Precipice and the Synagogue Church (Jesus’ childhood synagogue).</string>
+    <string name="tour_8_heading">Tour 8 - Jesus\' Ministry In Capernaum</string>
+    <string name="tour_8_description">Sites visited – Capernaum, Peter’s home, the Capernaum synagogue, the Sea of Galilee, Gamla (where thousands of Jews ended their own lives, Hippos, Korazin (the town Jesus cursed) and the Valley of the Doves (the path of Jesus from Nazareth to Capernaum).</string>
+    <string name="tour_9_heading">Tour 9 - The Sermon On The Mount</string>
+    <string name="tour_9_description">Sites visited – The traditional Church of the Beatitudes, the actual site of the Sermon on the Mount, the Eremos Cave (where Jesus prayed) and the Eremos Heights (where Jesus appointed His 12 Apostles).</string>
+    <string name="tour_10_heading">Tour 10 - Jesus\' Ministry In Galilee</string>
+    <string name="tour_10_description">Sites visited – A boat ride on the Sea of Galilee, Kursi (where Jesus cast the demons into the swine), Nain (where Jesus raised a widow’s son), the Bay of Parables, the Church of the 12 Apostles, Capernaum, the Temple Mount and Tiberias.</string>
+    <string name="tour_11_heading">Tour 11 - The Healings in Jerusalem</string>
+    <string name="tour_11_description">Sites visited – The Pool of Bethesda, Hezekiah’s Broad Wall, the St. Stephen’s Gate, Capernaum and the Jerusalem Model.</string>
+    <string name="tour_12_heading">Tour 12 - Adventures in Discipleship</string>
+    <string name="tour_12_description">Sites visited – Sebastia (Samaria), the cliffs of Arbel (overlooking the Sea of Galilee), an ancient Genessaret boat dock, Har Menorim (the Feeding of the 5000), the Church of John the Baptist in Sebastia, the tomb of John the Baptist, Capernaum, Tiberias, Galilee and Bethsaida.</string>
+    <string name="tour_13_heading">Tour 13 - Ministry to the Gentiles</string>
+    <string name="tour_13_description">Sites visited – Caesarea Philipi, the Church of the Multiplication, Nimrod’s Fortress, Mount Tabor (the traditional site of the Transfiguration of Jesus), Tel Dan, Tel Hadar (possible site of the feeding of the 4000), Capernaum, Bethsaida and Magdala.</string>
+    <string name="tour_14_heading">Tour 14 - Lessons on Discipleship</string>
+    <string name="tour_14_description">Sites visited – Ein Fawar (Jesus’ walking path to Jericho), the Monastery of St. George in Wadi Qelt, Capernaum, Sebastia and the Temple Mount.</string>
+    <string name="tour_15_heading">Tour 15 - The Mount of Olives</string>
+    <string name="tour_15_description">Sites visited – Beit She’an (Israel’s largest archeological site), the Bethany crusader ruins, the Bethany Church of St. Lazarus, the Pater Noster Convent (where Jesus taught The Lord’s Prayer, and the Temple Mount.</string>
+    <string name="tour_16_heading">Tour 16 - Jesus\' Confrontation with the Jews</string>
+    <string name="tour_16_description">Sites visited – The Bethany Orthodox Church (with the Seat of Jesus, the Canaanite Tunnel, Hezekiah’s drainage tunnel, Lazarus’ Tomb, the Temple Mount and the Jerusalem Model.</string>
+    <string name="tour_17_heading">Tour 17 - Bethany and the city of David</string>
+    <string name="tour_17_description">Sites visited – The City of David, the covered Herodian street, David’s palace, the Pool of Siloam, the Theodotus Synagogue (the story of the Man born blind), the Tower of Siloam, Wadi Kharrar, the Temple Mount and Capernaum.</string>
+    <string name="tour_18_heading">Coming soon</string>
+    <string name="tour_18_description">Coming soon</string>
+    <string name="tour_19_heading">Tour 19 - The Final path of Jerusalem</string>
+    <string name="tour_19_description">Sites visited – Tiberias, the palace of Herod Antipas and the Temple Mount.</string>
+    <string name="tour_20_heading">Tour 20 - The Journey Through Samaria</string>
+    <string name="tour_20_description">Sites visited – Burquin (the cave of the 10 Lepers), Zedekiah’s Cave, Mount Carmel, the Herodion, Herod’s Gate, the Jaffa Gate, the Dung Gate, the New Gate and Stella Maris (the cave of Elijah).</string>
+    <string name="tour_21_heading">Tour 21 - The Jericho That Jesus Knew</string>
+    <string name="tour_21_description">Sites visited – The Judean Wilderness, both Herodian and Old Testament Jericho, they Sycamore Tree in Jericho, and Wadi Kharrar (the original baptism site of John).</string>
+    <string name="tour_22_heading">Tour 22 - The Triumphal Ride</string>
+    <string name="tour_22_description">Sites visited – Bethphage (where Jesus borrowed the donkey), Dominus Flevit (where Jesus wept), Palm Sunday Road from Bethany to Jerusalem, the Golden Gate on the eastern wall of the Temple Mount, the Temple Mount, the Jerusalem Model, and various sites in Bethany.</string>
+    <string name="tour_23_heading">Tour 23 - The Temple Homily</string>
+    <string name="tour_23_description">Sites visited – The Rabbinic tunnels under Jerusalem, the Western Wall and Wilson Arch Library, the Ophel Archeological Park, the Temple Mount, and the Jerusalem model.</string>
+    <string name="tour_24_heading">Tour 24 - The Olivet Discourse</string>
+    <string name="tour_24_description">Sites visited – The Cemetery on the Mount of Olives, the Tomb of the Prophets, and the Pater Noster Convent.</string>
+    <string name="tour_25_heading">Tour 25 - The Last Passover</string>
+    <string name="tour_25_description">Sites visited – David’s Tomb, the Dormition Abbey (where Mary died), St. Peter in Gallicantu (the traditional home of Caiaphas), the Maccabean Stairs (where Jesus walked), the Upper Room (Cenacle), the Church of St. Mark (the alternative Upper Room), the Zion Gate and Oscar Schindlar’s grave.</string>
+    <string name="tour_26_heading">Tour 26 - Gethsemane</string>
+    <string name="tour_26_description">Sites visited – The Garden of Gethsemane, the traditional home of the high priest Annas, the Church of All Nations (with the Stone of Agony), the Kidron Valley and tombs, Mary’s Tomb, the Gethsemane Grotto, and the Church of St. Peter in Gallicantu.</string>
+    <string name="tour_27_heading">Tour 27 - The Trials Of Jesus</string>
+    <string name="tour_27_description">Sites visited – The Via Dolorosa (with all the Stations of the Cross), the Prison of Christ and Barabbas, the Lithostratos, the Church of St. James, the location of the Hasmonean Palace (Jesus’ trial with Herod), Gabbatha, the Kishle (ruins of Herod’s palace), the Courtyard of Flagellation, the Alexander Nevsky Compound (with the Judgment Gate), the Potter’s Field, the Temple Mount and the Jerusalem Model.</string>
+    <string name="tour_28_heading">Tour 28 - The Death Of Jesus</string>
+    <string name="tour_28_description">Sites visited – The Church of the Holy Sepulcher (including all chapels), the Garden Tomb, the Monastery of the Cross (from where the cross was cut), the Lutheran Church of the Redeemer, the Byzantine Model, the Jerusalem Model, and Herod Agrippa’s Third Wall.</string>
+    <string name="tour_29_heading">Tour 29 - The Glorified Christ</string>
+    <string name="tour_29_description">Sites visited – Emmaus, the Church of Mary Magdalene, the Church of the Holy Sepulcher, the Mensa Christi Chapel in Nazareth, the Church of St. Mark, the Upper Room (Cenacle) and the Temple Mount.</string>
+    <string name="tour_30_heading">Tour 30 - The Final Days Of Jesus</string>
+    <string name="tour_30_description">Sites visited – The Ascension Chapel, the Damascus Gate, the Cardo Maximus, Hadrian’s Forum, the Monastery of Mar Saba, Masada, the Church of Peter’s Primacy, the site of the Sermon on the Mount, the Ophel Archeological Park, and the Zion Gate.</string>
+
+    <!--Live Tours-->
+    <string name="live_tours_video_heading">Come To The Holyland On A Live Octagon Project Tour</string>
+    <string name="live_tours_video_description">An Octagon Tour is the only tour of it’s kind in the Holy Land, because we focus exclusively on the life of Jesus. Every site we take you to is referred to in the Gospels. (Check out our itinerary on this page, and you will see what we mean.) This means that you will be visiting all of the sites that you really came to see.\n\nEvery day we will put you in the three-foot circle of Jesus. You will walk where He walked, sit where He taught, and stand where He did His miracles. All of our guides are Christians, and our itinerary has been designed by Gary Crossland himself. The Merged Gospels is our field guide for our entire trip.\n\nMost of our travelers who have been to Israel before with other tours tell us that ours is about 75% unique. The reason is simple – it’s ALL about Jesus.\n\nThroughout 2016 we have focused our attention on launching The Octagon Project virtual tour. Very soon we will be restarting our Octagon Live Tours to Israel.\n\nAnd what about safety? Don’t be misguided by the media. People are coming to Israel by the droves from all over the world. The fact is that at any moment the safest place to be in the Holy Land is on a tour bus. Since Israel became a sovereign state in 1948 literally no one who has been a part of a tour group has ever been injured or killed there. The reason? Tourists bring money, and everyone wants to sell you something, including the Palestinians. Hence, everyone likes tourists.\n\nPlease get on our mailing list by submitting your contact information here, and we will notify you when we will be taking our next tour to Israel.</string>
+    <string name="tour_sites">The Octagon Tour Sites*</string>
+    <string name="tour_site_list">Capernaum - the town of Jesus\nThe actual site of the Sermon on the Mount\nThe cave where Jesus prayed all night\nWhere Jesus appointed His Apostles\nThe mountain of the miracle of the swine\nThe site of the feeding of the 5000\nThe site of the great catch of fish\nPeter’s home\nThe Capernaum synagogue\nKorazim, the town that Jesus cursed\nHerod’s palace in Tiberias\nThe home of Mary Magdalene\nA praise boat ride across Galilee\nThe ancient Galilee boat museum\nThe site of the woman at the well\nThe Mountain of Temptation\nHerod’s Jericho palace\nJesus’ baptism site\nThe birthplace of Jesus\nThe infant home of Jesus\nThe shepherds’ field\nThe shepherds’ caves\nThe home of Mary\nThe Nazareth synagogue of Jesus\nAncient Nazareth\nMary’s Spring in Nazareth\nWhen John spent his life in the wilderness\nThe Upper Room\nThe Via Dolorosa\nMount Calvary\nJesus’ Tomb\nThe Western Wall of the Temple\nThe Temple Mount\nThe Pool of Bethesda\nThe Tomb of Lazarus\nThe site of Jesus’ ascension\nThe road where Jesus rode the donkey\nWhere Jesus taught the Lord’s Prayer\nUnder the Church of the Holy Sepulcher\nThe gate through which Jesus carried the cross\nThe roof of the church of the Holy Sepulcher\nThe Pool of Siloam\nThe synagogue, from which the man born blind was cast\nThe palace of Caiaphas\nThe Garden of Gethsemane\nThe Cave of the Ten Lepers\nThe final path of Jesus after Gethsemane\nThe stairs that Jesus ascended before His trial\nThe rock of Christ’s agony in Gethsemane\nJesus’ cave residence at the Mount of Olives\nBethphage, from which Jesus took the donkey\nThe first-century streets of Jerusalem\nThe Old City marketplace\nThe tomb of Joseph of Arimathea\nGabatha, where Jesus was tried by Pilate\nThe Church of St. James the Apostle with his skull\nThe Potter’s Field\nThe Garden Tomb\nSamaria\nThe Mount of Olives\nThe Temple Mount\nThe Tower of Siloam\nGehenna (Hinnom Valley)\nThe site of Jesus post-resurrection fish breakfast at Galilee\n\n*Time restrictions or local conditions may not always permit us to take you to all the sites on this list.</string>
 </resources>
