@@ -38,7 +38,12 @@
             android:name=".SignupActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name=".OurStoreActivity" />
-        <activity android:name=".LiveToursActivity"></activity>
+        <activity android:name=".LiveToursActivity" />
+        <activity android:name=".CommentsActivity" />
+        <activity android:name=".ReviewsActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".SocialSitesActivity"></activity>
     </application>
 
 </manifest>

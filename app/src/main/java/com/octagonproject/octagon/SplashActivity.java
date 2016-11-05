@@ -17,7 +17,7 @@ public class SplashActivity extends BaseActivity {
         startTimer();
     }
 
-    private void startTimer(){
+    private void startTimer() {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

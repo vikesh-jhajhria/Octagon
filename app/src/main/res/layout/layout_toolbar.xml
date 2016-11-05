@@ -3,27 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="?actionBarSize"
-    android:background="@color/black_transparent"
+    android:background="@drawable/toolbar"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     app:popupTheme="@style/AppTheme.PopupOverlay">
 
-
-    <ImageView
-        android:id="@+id/img_menu"
+    <RelativeLayout
+        android:id="@+id/rl_menu"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:paddingRight="@dimen/margin_10"
-        android:src="@drawable/ic_menu"
-        android:visibility="visible" />
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_10"
+            android:src="@drawable/ic_menu"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_5"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="visible" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_toRightOf="@id/img_menu"
+        android:layout_toRightOf="@id/rl_menu"
         android:src="@drawable/app_icon" />
 
     <LinearLayout

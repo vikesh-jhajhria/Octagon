@@ -12,6 +12,6 @@ public class SignupActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        findViewById(R.id.img_menu).setVisibility(View.GONE);
+        findViewById(R.id.img_back).setOnClickListener(this);
     }
 }
