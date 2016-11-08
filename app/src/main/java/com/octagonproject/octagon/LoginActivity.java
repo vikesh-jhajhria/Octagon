@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.octagonproject.octagon.utils.FBLoginClass;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
 
     private FBLoginClass fbLoginClass;
     @Override
@@ -15,6 +15,6 @@ public class LoginActivity extends AppCompatActivity {
         fbLoginClass = new FBLoginClass();
         fbLoginClass.sdkInitialize(this);
         setContentView(R.layout.activity_login);
-        findViewById(R.id.img_menu).setVisibility(View.GONE);
+        findViewById(R.id.img_back).setOnClickListener(this);
     }
 }
