@@ -43,7 +43,8 @@
         <activity android:name=".ReviewsActivity" />
         <activity android:name=".ShoppingCartActivity" />
         <activity android:name=".CheckoutActivity" />
-        <activity android:name=".SocialSitesActivity"></activity>
+        <activity android:name=".SocialSitesActivity" />
+        <activity android:name=".TourDetailActivity"></activity>
     </application>
 
 </manifest>
