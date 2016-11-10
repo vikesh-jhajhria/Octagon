@@ -7,13 +7,24 @@ import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
+import com.octagonproject.octagon.utils.Config;
+
 public class HomeActivity extends BaseActivity {
 
     Handler handler = new Handler();
+    private YouTubePlayerView youTubeView1;
+    private YouTubePlayerView youTubeView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        youTubeView1 = (YouTubePlayerView) findViewById(R.id.youtube_view1);
+        youTubeView2 = (YouTubePlayerView) findViewById(R.id.youtube_view2);
+        youTubeView1.initialize(Config.YOUTUBE_KEY, this);
+        youTubeView2.initialize(Config.YOUTUBE_KEY, this);
 
         findViewById(R.id.img_back).setVisibility(View.GONE);
         findViewById(R.id.img_menu).setVisibility(View.VISIBLE);
@@ -33,6 +44,29 @@ public class HomeActivity extends BaseActivity {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == RECOVERY_REQUEST) {
+            youTubeView1.initialize(Config.YOUTUBE_KEY, this);
+            //youTubeView2.initialize(Config.YOUTUBE_KEY, this);
+        }
+    }
+
+    @Override
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
+        if (!wasRestored) {
+            if(provider == youTubeView1)
+            {
+                youTubePlayer.cueVideo("x4g4d7qKUWI");
+            }
+
+            /*if(provider == youTubeView2)
+            {
+                youTubePlayer.cueVideo("jSRqZI0Y4Hs");
+            }*/
+
+        }
+    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

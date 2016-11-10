@@ -1,5 +1,6 @@
 package com.octagonproject.octagon.utils;
 
+import android.util.Base64;
 import android.util.Log;
 
 import java.io.BufferedReader;
@@ -34,6 +35,11 @@ public class HTTPUrlConnection {
             Log.v("URL:", path);
             Log.e("PARAMS:", String.valueOf(params));
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+            String userPassword= Config.USERNAME+":"+Config.PASSWORD;
+            String encoding = new String(Base64.encode(userPassword.getBytes(),Base64.DEFAULT));
+            conn.setRequestProperty ("Authorization", "Basic " + encoding);
+
             conn.setReadTimeout(30000);
             conn.setConnectTimeout(30000);
             conn.setRequestMethod("POST");

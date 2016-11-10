@@ -155,6 +155,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -210,6 +211,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -265,6 +267,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -320,6 +323,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -375,6 +379,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -430,6 +435,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -485,6 +491,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -540,6 +547,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -595,6 +603,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -650,6 +659,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -705,6 +715,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -760,6 +771,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -815,6 +827,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -870,6 +883,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -925,6 +939,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -980,6 +995,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1035,6 +1051,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1090,6 +1107,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1145,6 +1163,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_20"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1200,6 +1219,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_21"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1255,6 +1275,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1310,6 +1331,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_23"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1365,6 +1387,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1420,6 +1443,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1475,6 +1499,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1530,6 +1555,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_27"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1585,6 +1611,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_28"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1640,6 +1667,8 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+
+                        android:id="@+id/link_tour_29"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"
@@ -1695,6 +1724,7 @@
                         android:textSize="@dimen/font_14" />
 
                     <TextView
+                        android:id="@+id/link_tour_30"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_10"

@@ -44,7 +44,8 @@
         <activity android:name=".ShoppingCartActivity" />
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".SocialSitesActivity" />
-        <activity android:name=".TourDetailActivity"></activity>
+        <activity android:name=".TourDetailActivity" />
+        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>

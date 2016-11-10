@@ -7,6 +7,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
+    <dimen name="rv_spacing">5dp</dimen>
+
     <dimen name="font_10">10sp</dimen>
     <dimen name="font_12">12sp</dimen>
     <dimen name="font_14">14sp</dimen>
