@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_online_tours"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    tools:context="com.octagonproject.octagon.ReviewsActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/review_header" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/review_text" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@color/black_transparent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_15"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_1"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_1"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_2"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_2"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_3"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_3"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_4"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_4"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_5"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_5"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_6"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_6"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_7"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_7"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_8"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_8"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/review_9"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_author_9"
+                    android:textColor="@color/golden_text"
+                    android:textSize="@dimen/font_14" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/jump_to_tour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="@string/go_to_tours"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/free_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/off_yellow"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="@string/free_signup"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
