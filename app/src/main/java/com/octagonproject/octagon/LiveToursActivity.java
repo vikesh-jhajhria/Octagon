@@ -24,6 +24,8 @@ public class LiveToursActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_tours);
+        findViewById(R.id.go_to_tours).setOnClickListener(this);
+        findViewById(R.id.shop).setOnClickListener(this);
         findViewById(R.id.img_back).setOnClickListener(this);
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(Config.YOUTUBE_KEY, this);
