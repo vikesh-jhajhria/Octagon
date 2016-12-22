@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b4000000"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/margin_15">
+
+    <LinearLayout
+        android:id="@+id/ll_order_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/merged_gospels_composite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:gravity="center"
+            android:text="@string/order_your_copy"
+            android:textColor="@color/golden_text"
+            android:textSize="@dimen/font_18" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_online_tours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_online_tours"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_shop"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_live_tours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_live_tours"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_faq"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_reviews"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_comments"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_about_us"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_bookstore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_bookstore"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_policy"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_permissions"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_photos"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_more_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_more_videos"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/off_white" />
+
+    <TextView
+        android:id="@+id/txt_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_contact_us"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:onClick="onClick"
+        android:text="@string/bottom_message"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/bottom_address"
+        android:textColor="@color/footer_text"
+        android:textSize="@dimen/font_16" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_30"
+    android:layout_marginTop="@dimen/margin_30"
+    android:background="@color/black_transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/yellow">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_50"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_15"
+            android:text="Scroll to Jump to Any Tour"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_close" />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_popup_tour_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_1_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_2_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_3_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_4_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_5_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_6_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_7_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_8_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_9_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_10_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_11_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_12_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_13_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_14_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_15_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_16_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_17_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_18_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_19_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_20_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_21_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_22_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_23_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_24_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_25_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_26_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_27_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_28_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_29_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/txt_popup_tour_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="@string/tour_30_heading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

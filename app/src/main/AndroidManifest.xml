@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.octagonproject.octagon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_key" />
+
+        <activity
+            android:name=".OnlineToursActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".OurStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LiveToursActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReviewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SocialSitesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TourDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FilmingPermissionActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity android:name=".BookstorePolicyActivity" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".FAQActivity"></activity>
+    </application>
+
+</manifest>

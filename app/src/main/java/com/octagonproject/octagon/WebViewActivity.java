@@ -26,9 +26,7 @@ public class WebViewActivity extends BaseActivity {
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedHttpAuthRequest(WebView view, HttpAuthHandler handler,
-                                                  String host,
-                                                  String realm) {
-
+                                                  String host, String realm) {
                 handler.proceed(Config.USERNAME, Config.PASSWORD);
             }
 
@@ -39,13 +37,16 @@ public class WebViewActivity extends BaseActivity {
 
         });
 
-        String userPassword = Config.USERNAME+":"+Config.PASSWORD;
+        String userPassword = Config.USERNAME + ":" + Config.PASSWORD;
         String encoding = new String(Base64.encode(userPassword.getBytes(), Base64.DEFAULT));
-        Map<String, String> headers = new HashMap<String, String>();
+        Map<String, String> headers = new HashMap<>();
         headers.put("Authorization", "Basic " + encoding);
-
-
-        mWebView.loadUrl("http://drive.google.com/viewerng/viewer?embedded=true&url=https://www.octagonproject.com/Amazing_Discoveries_of_The_Octagon_Project.pdf", headers);
+        if (getIntent().getStringExtra("TYPE").equalsIgnoreCase("PDF")) {
+            String PDF_URL = getIntent().getStringExtra("URL");
+            mWebView.loadUrl("http://drive.google.com/viewerng/viewer?embedded=true&url=" + PDF_URL, headers);
+        } else {
+            mWebView.loadUrl(getIntent().getStringExtra("URL"));
+        }
     }
 
 
