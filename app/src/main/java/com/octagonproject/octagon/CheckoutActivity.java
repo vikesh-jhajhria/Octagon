@@ -52,6 +52,7 @@ public class CheckoutActivity extends BaseActivity {
     public void onClick(View view) {
         getPayment();
     }
+
     private void getPayment() {
         //Getting the amount from editText
        // paymentAmount = editTextAmount.getText().toString();
