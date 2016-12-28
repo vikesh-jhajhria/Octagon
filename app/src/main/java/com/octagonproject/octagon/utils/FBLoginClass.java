@@ -3,6 +3,7 @@ package com.octagonproject.octagon.utils;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -18,7 +19,7 @@ import com.facebook.ProfileTracker;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 
-import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -26,11 +27,11 @@ import java.util.ArrayList;
  * Created by Vikesh on 29-04-2016.
  */
 public class FBLoginClass implements FacebookCallback<LoginResult> {
-    public CallbackManager callbackManager;
-    public OnFBResultListener resultListener;
     private Context context;
     private AccessTokenTracker accessTokenTracker;
     private ProfileTracker profileTracker;
+    public CallbackManager callbackManager;
+    public OnFBResultListener resultListener;
 
 
     public FBLoginClass() {
@@ -72,6 +73,7 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
         ArrayList<String> list = new ArrayList<>();
         list.add("public_profile");
         list.add("email");
+        list.add("user_location");
         list.add("user_friends");
         LoginManager.getInstance().logInWithReadPermissions(activity, list);
     }
@@ -93,30 +95,45 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
 
     private void displayMessage(Profile profile) {
         if (profile != null) {
-            Toast.makeText(context, profile.getName(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, profile.getName(), Toast.LENGTH_SHORT).show();
         }
     }
 
 
     @Override
     public void onSuccess(LoginResult loginResult) {
-        final AccessToken accessToken = loginResult.getAccessToken();
+        AccessToken accessToken = loginResult.getAccessToken();
         Profile profile = Profile.getCurrentProfile();
         displayMessage(profile);
-        /*newMeRequest for self data*/
-        GraphRequest request = GraphRequest.newMyFriendsRequest(accessToken, new GraphRequest.GraphJSONArrayCallback() {
-            @Override
-            public void onCompleted(JSONArray objects, GraphResponse response) {
-                try {
-                    if (resultListener != null)
-                        resultListener.onFBResult(objects);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+        GraphRequest request = GraphRequest.newMeRequest(accessToken,
+                new GraphRequest.GraphJSONObjectCallback() {
+                    @Override
+                    public void onCompleted(JSONObject object, GraphResponse response) {
+                        try {
+                            String facebookId = object.getString("id");
+                            String firstName = object.getString("first_name");
+                            String lastName = object.getString("last_name");
+                            String email = object.has("email") ? object.getString("email") : "";
+                            String imageURL = "http://graph.facebook.com/" + facebookId + "/picture?type=large";
+
+                            Log.v("Facebook=", facebookId + " " + firstName + " " + lastName + " " + email + " " + imageURL );
+
+                            JSONObject userData = new JSONObject();
+                            userData.put("name", firstName + " " + lastName);
+                            userData.put("email", email);
+                            userData.put("id", facebookId);
+                            userData.put("photo_url", imageURL);
+
+                            if (resultListener != null)
+                                resultListener.onFBResult(userData);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+
+                        }
+                    }
+                });
         Bundle parameters = new Bundle();
-        parameters.putString("fields", "id, email, name, gender");
+        parameters.putString("fields", "id, email, first_name, last_name, gender, location");
         request.setParameters(parameters);
         request.executeAsync();
     }
@@ -132,6 +149,8 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
     }
 
     public interface OnFBResultListener {
-        void onFBResult(JSONArray objects);
+        void onFBResult(JSONObject object);
     }
+
+
 }

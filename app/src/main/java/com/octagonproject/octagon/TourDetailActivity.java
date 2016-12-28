@@ -226,7 +226,7 @@ public class TourDetailActivity extends BaseActivity {
             postDataParams = new HashMap<String, String>();
             postDataParams.put("tour_id", "" + mTourId);
 
-            return HTTPUrlConnection.getInstance().load("https://www.octagonproject.com/wc-api/tour_api.php",
+            return HTTPUrlConnection.getInstance().loadPost("https://www.octagonproject.com/wc-api/tour_api.php",
                     postDataParams);
         }
 

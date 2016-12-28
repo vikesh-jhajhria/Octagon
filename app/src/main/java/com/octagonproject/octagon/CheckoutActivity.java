@@ -8,11 +8,11 @@ import android.util.Log;
 import android.view.View;
 
 import com.octagonproject.octagon.utils.Config;
-import com.paypal.android.sdk.payments.PayPalConfiguration;
+/*import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
 import com.paypal.android.sdk.payments.PaymentActivity;
-import com.paypal.android.sdk.payments.PaymentConfirmation;
+import com.paypal.android.sdk.payments.PaymentConfirmation;*/
 
 import org.json.JSONException;
 
@@ -22,27 +22,27 @@ public class CheckoutActivity extends BaseActivity {
 
     private String paymentAmount;
     //Paypal Configuration Object
-    private static PayPalConfiguration config = new PayPalConfiguration()
+    /*private static PayPalConfiguration config = new PayPalConfiguration()
             // Start with mock environment.  When ready, switch to sandbox (ENVIRONMENT_SANDBOX)
             // or live (ENVIRONMENT_PRODUCTION)
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
-            .clientId(Config.PAYPAL_CLIENT_ID);
+            .clientId(Config.PAYPAL_CLIENT_ID);*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
         findViewById(R.id.img_back).setOnClickListener(this);
 
-        Intent intent = new Intent(this, PayPalService.class);
+        /*Intent intent = new Intent(this, PayPalService.class);
 
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
 
-        startService(intent);
+        startService(intent);*/
 
     }
 
 
-    @Override
+    /*@Override
     public void onDestroy() {
         stopService(new Intent(this, PayPalService.class));
         super.onDestroy();
@@ -106,6 +106,6 @@ public class CheckoutActivity extends BaseActivity {
                 Log.i("paymentExample", "An invalid Payment or PayPalConfiguration was submitted. Please see the docs.");
             }
         }
-    }
+    }*/
 
 }

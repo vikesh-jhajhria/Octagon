@@ -25,36 +25,7 @@ public class OurStoreActivity extends BaseActivity {
         findViewById(R.id.txt_more_book).setOnClickListener(this);
         findViewById(R.id.txt_more_audio).setOnClickListener(this);
 
-        findViewById(R.id.txt_click_store_1).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_2).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_3).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_4).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_5).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_6).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_7).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_8).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_9).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_10).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_11).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_12).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_13).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_14).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_15).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_16).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_17).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_18).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_19).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_20).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_21).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_22).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_23).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_24).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_25).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_26).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_27).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_28).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_29).setOnClickListener(this);
-        findViewById(R.id.txt_click_store_30).setOnClickListener(this);
+
     }
 
     @Override
@@ -97,96 +68,7 @@ public class OurStoreActivity extends BaseActivity {
                     ((TextView)findViewById(R.id.txt_more_audio)).setText("More...");
                 }
                 break;
-            case R.id.txt_click_store_1:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",1));
-                break;
-            case R.id.txt_click_store_2:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",2));
-                break;
-            case R.id.txt_click_store_3:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",3));
-                break;
-            case R.id.txt_click_store_4:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",4));
-                break;
-            case R.id.txt_click_store_5:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",5));
-                break;
-            case R.id.txt_click_store_6:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",6));
-                break;
-            case R.id.txt_click_store_7:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",7));
-                break;
-            case R.id.txt_click_store_8:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",8));
-                break;
-            case R.id.txt_click_store_9:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",9));
-                break;
-            case R.id.txt_click_store_10:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",10));
-                break;
-            case R.id.txt_click_store_11:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",11));
-                break;
-            case R.id.txt_click_store_12:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",12));
-                break;
-            case R.id.txt_click_store_13:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",13));
-                break;
-            case R.id.txt_click_store_14:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",14));
-                break;
-            case R.id.txt_click_store_15:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",15));
-                break;
-            case R.id.txt_click_store_16:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",16));
-                break;
-            case R.id.txt_click_store_17:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",17));
-                break;
-            case R.id.txt_click_store_18:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",18));
-                break;
-            case R.id.txt_click_store_19:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",19));
-                break;
-            case R.id.txt_click_store_20:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",20));
-                break;
-            case R.id.txt_click_store_21:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",21));
-                break;
-            case R.id.txt_click_store_22:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",22));
-                break;
-            case R.id.txt_click_store_23:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",23));
-                break;
-            case R.id.txt_click_store_24:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",24));
-                break;
-            case R.id.txt_click_store_25:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",25));
-                break;
-            case R.id.txt_click_store_26:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",26));
-                break;
-            case R.id.txt_click_store_27:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",27));
-                break;
-            case R.id.txt_click_store_28:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",28));
-                break;
-            case R.id.txt_click_store_29:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",29));
-                break;
-            case R.id.txt_click_store_30:
-                startActivity(new Intent(getApplicationContext(),TourDetailActivity.class).putExtra("TOUR_ID",30));
-                break;
+
         }
     }
 }

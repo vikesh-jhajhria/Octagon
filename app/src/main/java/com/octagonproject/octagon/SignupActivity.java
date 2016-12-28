@@ -1,17 +1,125 @@
 package com.octagonproject.octagon;
 
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.octagonproject.octagon.BaseActivity;
 import com.octagonproject.octagon.R;
+import com.octagonproject.octagon.utils.AppPreferences;
+import com.octagonproject.octagon.utils.Config;
+import com.octagonproject.octagon.utils.FBLoginClass;
+import com.octagonproject.octagon.utils.HTTPUrlConnection;
+import com.octagonproject.octagon.utils.Utils;
 
-public class SignupActivity extends BaseActivity {
+import org.json.JSONException;
+import org.json.JSONObject;
 
+public class SignupActivity extends BaseActivity implements FBLoginClass.OnFBResultListener{
+    private FBLoginClass fbLoginClass;
+    private String username, password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        fbLoginClass = new FBLoginClass();
+        fbLoginClass.sdkInitialize(this);
         findViewById(R.id.img_back).setOnClickListener(this);
+        findViewById(R.id.btn_login).setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        super.onClick(view);
+        switch (view.getId()) {
+            case R.id.btn_login:
+                username = ((EditText) findViewById(R.id.txt_login_email)).getText().toString().trim();
+                if (username.isEmpty()) {
+                    ((EditText) findViewById(R.id.txt_login_email)).setError(getString(R.string.error_username_empty));
+                    break;
+                }
+                password = ((EditText) findViewById(R.id.txt_login_password)).getText().toString().trim();
+                if (password.isEmpty()) {
+                    ((EditText) findViewById(R.id.txt_login_password)).setError(getString(R.string.error_password_empty));
+                    break;
+                }
+                if (Utils.isNetworkConnected(this, true)) {
+                    new SignupActivity.SignInTask().execute();
+                }
+                break;
+            case R.id.btn_reg_fb:
+            case R.id.btn_login_fb:
+                fbLoginClass.setFBResultListener(this);
+                fbLoginClass.sdkInitialize(getApplicationContext());
+                fbLoginClass.login(this);
+        }
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        fbLoginClass.callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+        fbLoginClass.stopTracking();
+    }
+
+
+    @Override
+    public void onFBResult(JSONObject object) {
+        Log.v(TAG, object.toString());
+        try {
+            username = object.getString("email").isEmpty() ? object.getString("id") : object.getString("email");
+            password = "";
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (Utils.isNetworkConnected(this, true)) {
+            new SignInTask().execute();
+        }
+    }
+
+    class SignInTask extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            showProgessDialog();
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            return HTTPUrlConnection.getInstance().loadGet(Config.LOGIN + "?insecure=cool&email=" + username + "&password=" + password);
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            dismissProgressDialog();
+            try {
+                JSONObject object = new JSONObject(result);
+                if (object.getString("status").equalsIgnoreCase("ok")) {
+                    JSONObject data = object.getJSONObject("user");
+                    AppPreferences pref = AppPreferences.getAppPreferences(getApplicationContext());
+                    pref.putStringValue(AppPreferences.USER_ID, data.getString("id"));
+                    pref.putStringValue(AppPreferences.USER_NAME, data.getString("username"));
+
+                    finish();
+                } else {
+                    Toast.makeText(SignupActivity.this, object.getString("error"), Toast.LENGTH_LONG).show();
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
+        }
     }
 }

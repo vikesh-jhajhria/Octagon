@@ -33,7 +33,7 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.squareup.okhttp:okhttp:2.7.5'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
-    compile 'com.paypal.sdk:paypal-android-sdk:2.15.1'
+    //compile 'com.paypal.sdk:paypal-android-sdk:2.15.1'
     compile files('libs/YouTubeAndroidPlayerApi.jar')
     compile project(':flowtextview')
 }

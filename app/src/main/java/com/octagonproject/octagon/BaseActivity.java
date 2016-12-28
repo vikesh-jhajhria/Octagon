@@ -1,5 +1,7 @@
 package com.octagonproject.octagon;
 
+import android.app.ActivityManager;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,6 +14,8 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 
+import java.util.List;
+
 /**
  * Created by Vikesh on 10/21/2016.
  */
@@ -20,31 +24,56 @@ public class BaseActivity extends YouTubeBaseActivity implements View.OnClickLis
         YouTubePlayer.OnInitializedListener {
 
     public static final int RECOVERY_REQUEST = 1;
-    private boolean doubleBackToExitPressedOnce;
+    private boolean isExit;
+    private ProgressDialog dialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        dialog = new ProgressDialog(this);
+        dialog.setMessage("Please wait...");
+        dialog.setCancelable(false);
     }
+
 
     public String TAG = "OCTAGON";
 
+    public void showProgessDialog() {
+        if (dialog != null && !dialog.isShowing() && !this.isFinishing())
+            dialog.show();
+    }
+
+    public void showProgessDialog(String message) {
+        if (dialog != null && !dialog.isShowing() && !this.isFinishing()) {
+            dialog.setMessage(message);
+            dialog.show();
+        }
+    }
+
+    public void dismissProgressDialog() {
+        if (dialog != null && dialog.isShowing() && !this.isFinishing())
+            dialog.dismiss();
+    }
+
     @Override
     public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
+        ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        List<ActivityManager.RunningTaskInfo> taskList = activityManager.getRunningTasks(10);
+        if (taskList.get(0).numActivities == 1 && taskList.get(0).topActivity.getClassName().equals(this.getClass().getName())) {
+            if (isExit) {
+                finish();
+            } else {
+                Toast.makeText(this, "Press back again to Exit !", Toast.LENGTH_SHORT).show();
+                isExit = true;
+            }
+        } else {
             super.onBackPressed();
-            return;
         }
-
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Press back again to Exit !", Toast.LENGTH_SHORT).show();
-
         new Handler().postDelayed(new Runnable() {
 
             @Override
             public void run() {
-                doubleBackToExitPressedOnce=false;
+                isExit = false;
             }
         }, 2000);
     }
@@ -56,10 +85,10 @@ public class BaseActivity extends YouTubeBaseActivity implements View.OnClickLis
                 onBackPressed();
                 break;
             case R.id.shop:
-                startActivity(new Intent(getApplicationContext(),OurStoreActivity.class));
+                startActivity(new Intent(getApplicationContext(), OurStoreActivity.class));
                 break;
             case R.id.go_to_tours:
-                startActivity(new Intent(getApplicationContext(),OnlineToursActivity.class));
+                startActivity(new Intent(getApplicationContext(), OnlineToursActivity.class));
                 break;
             case R.id.txt_message:
                 Intent intent = new Intent(Intent.ACTION_SENDTO)

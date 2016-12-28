@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.octagonproject.octagon.utils.AppPreferences;
 import com.octagonproject.octagon.utils.Config;
+import com.octagonproject.octagon.utils.Utils;
 
 public class SplashActivity extends BaseActivity {
 
@@ -15,6 +16,7 @@ public class SplashActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         startTimer();
+        Utils.printKeyHash(this);
     }
 
     private void startTimer() {
