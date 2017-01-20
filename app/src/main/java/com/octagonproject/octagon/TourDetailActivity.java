@@ -180,8 +180,8 @@ public class TourDetailActivity extends BaseActivity {
                 break;
             case R.id.ll_banner:
                 AppPreferences preferences = AppPreferences.getAppPreferences(getApplicationContext());
-                String userId = preferences.getStringValue(AppPreferences.USER_ID);
-                if (userId != null && !userId.isEmpty()) {
+                String userName = preferences.getStringValue(AppPreferences.USER_NAME);
+                if (userName != null && !userName.isEmpty()) {
                     startActivity(new Intent(getApplicationContext(), WebViewActivity.class)
                             .putExtra("TYPE", "WEB")
                             .putExtra("URL", "https://www.octagonproject.com/vr-videos/free_video.php?vid=2639"));

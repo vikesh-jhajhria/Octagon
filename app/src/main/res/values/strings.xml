@@ -456,4 +456,6 @@ A2: Internet connection speed is important when playing any 360° virtual realit
 
     <!--Footer-->
     <string name="sign_in">Sign In</string>
+    <string name="logout_message">Do you really want to logout?</string>
+    <string name="return_shop">Return To Shop</string>
 </resources>

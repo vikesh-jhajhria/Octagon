@@ -109,6 +109,7 @@
                                 android:textSize="@dimen/font_14" />
 
                             <TextView
+                                android:id="@+id/txt_atc_printed_book"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="@dimen/margin_5"
@@ -139,6 +140,7 @@
                                 android:textSize="@dimen/font_14" />
 
                             <TextView
+                                android:id="@+id/txt_atc_e_book"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="@dimen/margin_5"
@@ -246,6 +248,7 @@
                                 android:textSize="@dimen/font_14" />
 
                             <TextView
+                                android:id="@+id/txt_atc_cd"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="@dimen/margin_5"
@@ -276,6 +279,7 @@
                                 android:textSize="@dimen/font_14" />
 
                             <TextView
+                                android:id="@+id/txt_atc_mp3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="@dimen/margin_5"

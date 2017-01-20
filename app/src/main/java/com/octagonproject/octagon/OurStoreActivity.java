@@ -1,7 +1,6 @@
 package com.octagonproject.octagon;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -24,6 +23,10 @@ public class OurStoreActivity extends BaseActivity {
 
         findViewById(R.id.txt_more_book).setOnClickListener(this);
         findViewById(R.id.txt_more_audio).setOnClickListener(this);
+        findViewById(R.id.txt_atc_printed_book).setOnClickListener(this);
+        findViewById(R.id.txt_atc_cd).setOnClickListener(this);
+        findViewById(R.id.txt_atc_e_book).setOnClickListener(this);
+        findViewById(R.id.txt_atc_mp3).setOnClickListener(this);
 
 
     }
@@ -68,7 +71,18 @@ public class OurStoreActivity extends BaseActivity {
                     ((TextView)findViewById(R.id.txt_more_audio)).setText("More...");
                 }
                 break;
-
+            case R.id.txt_atc_cd:
+                startActivity(new Intent(this,ShoppingCartActivity.class).putExtra("ITEM","CD"));
+                break;
+            case R.id.txt_atc_e_book:
+                startActivity(new Intent(this,ShoppingCartActivity.class).putExtra("ITEM","EBOOK"));
+                break;
+            case R.id.txt_atc_mp3:
+                startActivity(new Intent(this,ShoppingCartActivity.class).putExtra("ITEM","MP3"));
+                break;
+            case R.id.txt_atc_printed_book:
+                startActivity(new Intent(this,ShoppingCartActivity.class).putExtra("ITEM","PRINTED_BOOK"));
+                break;
         }
     }
 }

@@ -1,7 +1,6 @@
 package com.octagonproject.octagon;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.GravityCompat;
@@ -10,13 +9,15 @@ import android.view.View;
 
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+import com.octagonproject.octagon.utils.AppPreferences;
 import com.octagonproject.octagon.utils.Config;
+import com.octagonproject.octagon.utils.Utils;
 
 public class HomeActivity extends BaseActivity {
 
     Handler handler = new Handler();
     private YouTubePlayerView youTubeView;
-
+    AppPreferences preferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +47,23 @@ public class HomeActivity extends BaseActivity {
         findViewById(R.id.img_youtube).setOnClickListener(this);
         findViewById(R.id.img_instagram).setOnClickListener(this);
         findViewById(R.id.img_christmas).setOnClickListener(this);
+        findViewById(R.id.logout).setOnClickListener(this);
 
+        preferences = AppPreferences.getAppPreferences(getApplicationContext());
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String userName = preferences.getStringValue(AppPreferences.USER_NAME);
+        if (userName.isEmpty()) {
+            findViewById(R.id.login).setVisibility(View.VISIBLE);
+            findViewById(R.id.logout).setVisibility(View.GONE);
+        } else {
+            findViewById(R.id.login).setVisibility(View.GONE);
+            findViewById(R.id.logout).setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -100,6 +117,23 @@ public class HomeActivity extends BaseActivity {
 
             case R.id.login:
                 loadActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                break;
+            case R.id.logout:
+                drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.closeDrawer(GravityCompat.START);
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Utils.showDecisionDialog(HomeActivity.this, "Logout", getString(R.string.logout_message), new Utils.AlertCallback() {
+
+                            public void callback() {
+                                preferences.putStringValue(AppPreferences.USER_NAME, "");
+                                findViewById(R.id.login).setVisibility(View.VISIBLE);
+                                findViewById(R.id.logout).setVisibility(View.GONE);
+                            }
+                        });
+                    }
+                }, 50);
                 break;
             case R.id.our_store:
                 loadActivity(new Intent(getApplicationContext(), OurStoreActivity.class));

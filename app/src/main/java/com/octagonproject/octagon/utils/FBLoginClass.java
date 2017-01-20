@@ -32,6 +32,7 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
     private ProfileTracker profileTracker;
     public CallbackManager callbackManager;
     public OnFBResultListener resultListener;
+    private AccessToken accessToken;
 
 
     public FBLoginClass() {
@@ -60,6 +61,7 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
         };
 
         startTracking();
+        LoginManager.getInstance().logOut();
         LoginManager.getInstance().registerCallback(callbackManager, this);
 
 
@@ -102,7 +104,7 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
 
     @Override
     public void onSuccess(LoginResult loginResult) {
-        AccessToken accessToken = loginResult.getAccessToken();
+        accessToken = loginResult.getAccessToken();
         Profile profile = Profile.getCurrentProfile();
         displayMessage(profile);
         GraphRequest request = GraphRequest.newMeRequest(accessToken,
@@ -123,6 +125,7 @@ public class FBLoginClass implements FacebookCallback<LoginResult> {
                             userData.put("email", email);
                             userData.put("id", facebookId);
                             userData.put("photo_url", imageURL);
+                            userData.put("token",accessToken.getToken());
 
                             if (resultListener != null)
                                 resultListener.onFBResult(userData);

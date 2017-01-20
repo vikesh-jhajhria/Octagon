@@ -81,7 +81,7 @@ public class HTTPUrlConnection {
 
             conn.setReadTimeout(30000);
             conn.setConnectTimeout(30000);
-            conn.setRequestMethod("GET");
+            conn.setRequestMethod("POST");
             conn.setDoInput(true);
             conn.setDoOutput(true);
 

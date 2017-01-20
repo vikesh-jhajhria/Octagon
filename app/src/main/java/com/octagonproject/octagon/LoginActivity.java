@@ -78,13 +78,49 @@ public class LoginActivity extends BaseActivity implements FBLoginClass.OnFBResu
     public void onFBResult(JSONObject object) {
         Log.v(TAG, object.toString());
         try {
-            username = object.getString("email").isEmpty() ? object.getString("id") : object.getString("email");
-            password = "";
-        } catch (JSONException e) {
+            if (Utils.isNetworkConnected(this, true)) {
+                username = object.getString("name");
+                new SocialLogin().execute(object.getString("token"));
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        if (Utils.isNetworkConnected(this, true)) {
-            new SignInTask().execute();
+
+    }
+
+    class SocialLogin extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            showProgessDialog();
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            return HTTPUrlConnection.getInstance().loadGet(Config.SOCIAL_LOGIN + "&access_token=" + params[0]);
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            dismissProgressDialog();
+            try {
+                JSONObject object = new JSONObject(result);
+                if (object.getString("status").equalsIgnoreCase("ok")) {
+                    AppPreferences pref = AppPreferences.getAppPreferences(getApplicationContext());
+                    pref.putStringValue(AppPreferences.USER_NAME, username);
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                    finishAffinity();
+                } else {
+                    Toast.makeText(LoginActivity.this, object.getString("error"), Toast.LENGTH_LONG).show();
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
         }
     }
 
@@ -99,7 +135,7 @@ public class LoginActivity extends BaseActivity implements FBLoginClass.OnFBResu
         @Override
         protected String doInBackground(String... params) {
 
-            return HTTPUrlConnection.getInstance().loadGet(Config.LOGIN + "?insecure=cool&email=" + username + "&password=" + password);
+            return HTTPUrlConnection.getInstance().loadGet(Config.LOGIN + "&email=" + username + "&password=" + password);
         }
 
         @Override

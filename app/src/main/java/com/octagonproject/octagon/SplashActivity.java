@@ -25,9 +25,9 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void run() {
                 AppPreferences preferences = AppPreferences.getAppPreferences(getApplicationContext());
-                String userId = preferences.getStringValue(AppPreferences.USER_ID);
-                Log.v(TAG, "userId=" + userId);
-                if (userId.isEmpty()) {
+                String userName = preferences.getStringValue(AppPreferences.USER_NAME);
+                Log.v(TAG, "userName=" + userName);
+                if (userName.isEmpty()) {
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                     finishAffinity();
                 } else {
