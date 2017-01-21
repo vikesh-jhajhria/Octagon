@@ -458,4 +458,8 @@ A2: Internet connection speed is important when playing any 360° virtual realit
     <string name="sign_in">Sign In</string>
     <string name="logout_message">Do you really want to logout?</string>
     <string name="return_shop">Return To Shop</string>
+    <string name="update_cart">Update Cart</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="proceed_checkout">Proceed To Checkout</string>
+    <string name="subtotal">Subtotal:</string>
 </resources>
