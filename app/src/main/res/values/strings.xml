@@ -462,4 +462,10 @@ A2: Internet connection speed is important when playing any 360° virtual realit
     <string name="continue_shopping">Continue Shopping</string>
     <string name="proceed_checkout">Proceed To Checkout</string>
     <string name="subtotal">Subtotal:</string>
+    <string name="delete_item">Delete this item below</string>
+    <string name="product">Product:</string>
+    <string name="price">Price per item:</string>
+    <string name="total_price">Total Price:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="get_free_gift">Get a free gift, and keep The Octagon Project free for your family!</string>
 </resources>
