@@ -8,14 +8,15 @@ public class CartItemVO {
 
     int _id;
     String _name;
-    int _price, _quantity;
+    double _price;
+    int _quantity;
 
     // Empty constructor
     public CartItemVO(){
 
     }
     // constructor
-    public CartItemVO(int id, String name, int price,int quantity){
+    public CartItemVO(int id, String name, double price,int quantity){
         this._id = id;
         this._name = name;
         this._price = price;
@@ -23,7 +24,7 @@ public class CartItemVO {
     }
 
     // constructor
-    public CartItemVO(String name, int price, int quantity){
+    public CartItemVO(String name, double price, int quantity){
         this._name = name;
         this._price = price;
         this._quantity = quantity;
@@ -45,11 +46,11 @@ public class CartItemVO {
         this._name = name;
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return this._price;
     }
 
-    public void setPrice(int price){
+    public void setPrice(double price){
         this._price = price;
     }
 
